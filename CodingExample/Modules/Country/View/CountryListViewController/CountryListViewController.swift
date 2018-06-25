@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CountryListViewController.swift
 //  CodingExample
 //
 //  Created by Deepak P. Patil on 25/06/18.
@@ -8,18 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CountryListViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.navigationController?.navigationBar.topItem?.title = "Country List"
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
 }
-
