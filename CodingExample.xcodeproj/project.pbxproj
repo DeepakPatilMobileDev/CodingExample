@@ -12,6 +12,7 @@
 		FD2EE44520E0AC4000FBB611 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD2EE44320E0AC4000FBB611 /* Main.storyboard */; };
 		FD2EE44720E0AC4100FBB611 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD2EE44620E0AC4100FBB611 /* Assets.xcassets */; };
 		FD2EE44A20E0AC4100FBB611 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD2EE44820E0AC4100FBB611 /* LaunchScreen.storyboard */; };
+		FD2EE45520E0AE9E00FBB611 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2EE45420E0AE9E00FBB611 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FD2EE44620E0AC4100FBB611 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD2EE44920E0AC4100FBB611 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD2EE44B20E0AC4100FBB611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD2EE45420E0AE9E00FBB611 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		FD2EE43E20E0AC4000FBB611 /* CodingExample */ = {
 			isa = PBXGroup;
 			children = (
+				FD2EE45320E0AE9E00FBB611 /* BaseClasses */,
 				FD2EE43F20E0AC4000FBB611 /* AppDelegate.swift */,
 				FD2EE44120E0AC4000FBB611 /* ViewController.swift */,
 				FD2EE44320E0AC4000FBB611 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				FD2EE44B20E0AC4100FBB611 /* Info.plist */,
 			);
 			path = CodingExample;
+			sourceTree = "<group>";
+		};
+		FD2EE45320E0AE9E00FBB611 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				FD2EE45420E0AE9E00FBB611 /* BaseViewController.swift */,
+			);
+			path = BaseClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			files = (
 				FD2EE44220E0AC4000FBB611 /* ViewController.swift in Sources */,
 				FD2EE44020E0AC4000FBB611 /* AppDelegate.swift in Sources */,
+				FD2EE45520E0AE9E00FBB611 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
