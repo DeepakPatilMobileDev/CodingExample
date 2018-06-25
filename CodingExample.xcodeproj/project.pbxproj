@@ -14,6 +14,11 @@
 		FD2EE46920E0B55300FBB611 /* CountryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2EE46720E0B55300FBB611 /* CountryListViewController.swift */; };
 		FD2EE46A20E0B55300FBB611 /* CountryListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD2EE46820E0B55300FBB611 /* CountryListViewController.xib */; };
 		FD2EE46C20E0B65200FBB611 /* ApplicationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2EE46B20E0B65200FBB611 /* ApplicationRouter.swift */; };
+		FD2EE46F20E0D49A00FBB611 /* CountryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2EE46E20E0D49A00FBB611 /* CountryEntity.swift */; };
+		FD2EE47120E0D7F500FBB611 /* GetCountriesDataInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2EE47020E0D7F500FBB611 /* GetCountriesDataInteractor.swift */; };
+		FD2EE47520E0D8A000FBB611 /* WebServiceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2EE47420E0D8A000FBB611 /* WebServiceInteractor.swift */; };
+		FD2EE47720E0D97700FBB611 /* BaseAPIInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2EE47620E0D97700FBB611 /* BaseAPIInteractor.swift */; };
+		FD2EE47920E0E20500FBB611 /* CountryListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2EE47820E0E20500FBB611 /* CountryListPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		FD2EE46720E0B55300FBB611 /* CountryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryListViewController.swift; sourceTree = "<group>"; };
 		FD2EE46820E0B55300FBB611 /* CountryListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountryListViewController.xib; sourceTree = "<group>"; };
 		FD2EE46B20E0B65200FBB611 /* ApplicationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ApplicationRouter.swift; path = CodingExample/Application/ApplicationRouter.swift; sourceTree = SOURCE_ROOT; };
+		FD2EE46E20E0D49A00FBB611 /* CountryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryEntity.swift; sourceTree = "<group>"; };
+		FD2EE47020E0D7F500FBB611 /* GetCountriesDataInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCountriesDataInteractor.swift; sourceTree = "<group>"; };
+		FD2EE47420E0D8A000FBB611 /* WebServiceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceInteractor.swift; sourceTree = "<group>"; };
+		FD2EE47620E0D97700FBB611 /* BaseAPIInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIInteractor.swift; sourceTree = "<group>"; };
+		FD2EE47820E0E20500FBB611 /* CountryListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +128,8 @@
 		FD2EE45A20E0B4D500FBB611 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				FD2EE47420E0D8A000FBB611 /* WebServiceInteractor.swift */,
+				FD2EE47620E0D97700FBB611 /* BaseAPIInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -147,6 +159,7 @@
 		FD2EE45E20E0B4EB00FBB611 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				FD2EE46E20E0D49A00FBB611 /* CountryEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -154,6 +167,7 @@
 		FD2EE45F20E0B4EB00FBB611 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				FD2EE47820E0E20500FBB611 /* CountryListPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -168,6 +182,7 @@
 		FD2EE46120E0B4EB00FBB611 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				FD2EE47020E0D7F500FBB611 /* GetCountriesDataInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -262,9 +277,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD2EE44020E0AC4000FBB611 /* AppDelegate.swift in Sources */,
+				FD2EE46F20E0D49A00FBB611 /* CountryEntity.swift in Sources */,
+				FD2EE47720E0D97700FBB611 /* BaseAPIInteractor.swift in Sources */,
 				FD2EE46920E0B55300FBB611 /* CountryListViewController.swift in Sources */,
+				FD2EE47120E0D7F500FBB611 /* GetCountriesDataInteractor.swift in Sources */,
 				FD2EE46C20E0B65200FBB611 /* ApplicationRouter.swift in Sources */,
 				FD2EE45520E0AE9E00FBB611 /* BaseViewController.swift in Sources */,
+				FD2EE47520E0D8A000FBB611 /* WebServiceInteractor.swift in Sources */,
+				FD2EE47920E0E20500FBB611 /* CountryListPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
