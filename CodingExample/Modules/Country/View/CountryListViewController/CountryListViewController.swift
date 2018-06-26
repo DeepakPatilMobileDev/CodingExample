@@ -9,18 +9,21 @@
 import UIKit
 
 class CountryListViewController: BaseViewController {
+    
     let countryPresenter:CountryListPresenter  = CountryListPresenter()
+    
+    @IBOutlet weak var countryTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.topItem?.title = "Country List(VIPER Design)"
         // Do any additional setup after loading the view.
-        countryPresenter.fetchAndLoadCountryList()
+        countryPresenter.fetchAndLoadCountryList {
+            self.countryTableView.reloadData()
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.topItem?.title = "Country List(VIPER Design)"
     }
-    
-    
+ 
 }

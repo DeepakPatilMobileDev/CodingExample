@@ -31,19 +31,35 @@ class BaseAPIInteractor{
         }
     }
     
-    func onRequestSuccess(responseData:Any){
+   private func onRequestSuccess(responseData:Any){
         if let success = successCompletion {
-            success(responseData)
+            DispatchQueue.main.async {
+                success(responseData)
+            }
+            
         }else{
             //TODO:: check if Delegates are configured or any other case
         }
     }
     
-    func onRequestFailure(error:Error){
+    private func onRequestFailure(error:Error){
         if let failure = failedCompletion {
-            failure(error)
+            DispatchQueue.main.async {
+                failure(error)
+            }
         }else{
             //TODO:: check if Delegates are configured or any other case
         }
     }
+    
+    func downloadImageFromURL(success:@escaping ((Any)->()) ,failure:@escaping ((Error)->())) {
+        self.successCompletion = success
+        self.failedCompletion = failure
+        URLSession.shared.downloadImageFromURL(urlString: self.requestURL, onImageDownloaded: { (dataDownload) in
+             self.onRequestSuccess(responseData: dataDownload)
+        }) { (error) in
+            self.onRequestFailure(error: error)
+        }
+    }
+    
 }

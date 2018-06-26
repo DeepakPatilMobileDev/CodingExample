@@ -59,6 +59,7 @@ extension URLSession {
                 failure(error!)
             }
         }
+
         dataTask.resume()
     }
     
@@ -66,6 +67,23 @@ extension URLSession {
      // TODO:: add Image Download
      */
     
+    func downloadImageFromURL(urlString:String,onImageDownloaded: @escaping (Data)->(),failure:@escaping (_ error:Error)->()){
+        let downloadTask:URLSessionDownloadTask =  self.downloadTask(with: URL(string: urlString)!) { (url, response, downloadError) in
+            if downloadError == nil{
+            
+                do{
+                    let dataWithURL = try Data(contentsOf: url!)
+                    onImageDownloaded(dataWithURL)
+                }catch {
+                    failure(error)
+                }
+            } else {
+                failure(downloadError!)
+            }
+        }
+    downloadTask.resume()
+    
+    }
     
     /*
      // TODO:: cache
