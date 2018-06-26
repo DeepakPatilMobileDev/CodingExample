@@ -25,6 +25,7 @@
 		FD66721620E213C90004C79D /* CountryModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD66721520E213C90004C79D /* CountryModuleRouter.swift */; };
 		FD66721A20E216E60004C79D /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD66721920E216E60004C79D /* BaseRouter.swift */; };
 		FD66721C20E2194F0004C79D /* CountryFlagInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD66721B20E2194F0004C79D /* CountryFlagInteractor.swift */; };
+		FD66721E20E240980004C79D /* FlagViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD66721D20E240980004C79D /* FlagViewPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		FD66721520E213C90004C79D /* CountryModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModuleRouter.swift; sourceTree = "<group>"; };
 		FD66721920E216E60004C79D /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		FD66721B20E2194F0004C79D /* CountryFlagInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryFlagInteractor.swift; sourceTree = "<group>"; };
+		FD66721D20E240980004C79D /* FlagViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagViewPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				FD2EE47820E0E20500FBB611 /* CountryListPresenter.swift */,
+				FD66721D20E240980004C79D /* FlagViewPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				FD2EE45520E0AE9E00FBB611 /* BaseViewController.swift in Sources */,
 				FD2EE47520E0D8A000FBB611 /* WebServiceInteractor.swift in Sources */,
 				FD2EE47920E0E20500FBB611 /* CountryListPresenter.swift in Sources */,
+				FD66721E20E240980004C79D /* FlagViewPresenter.swift in Sources */,
 				FD66720920E2063B0004C79D /* CountryListVCTableViewExtension.swift in Sources */,
 				FD66721620E213C90004C79D /* CountryModuleRouter.swift in Sources */,
 			);

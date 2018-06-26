@@ -11,7 +11,6 @@ import UIKit
 class  CountryListPresenter {
     var countryListInteractor:GetCountriesDataInteractor = GetCountriesDataInteractor(urlString: "http://www.geognos.com/api/en/countries/info/all.json");
     var countryListArray:[CountryEntity] = []
-    var countryFlagInteractor:CountryFlagInteractor = CountryFlagInteractor()
     var countryRouter = CountryModuleRouter()
     
     
@@ -30,16 +29,9 @@ class  CountryListPresenter {
     }
     
     func onSelectingCountryAtIndex(index:Int){
-        countryRouter.lauchFlagImageController(presenter: self, countryData: countryListArray[index])
+        countryRouter.lauchFlagImageController(countryData: countryListArray[index])
     }
 
-    func fetchImageOfCountry(flagUrl:String,onImageFetched:@escaping (UIImage)->()) {
-        
-        countryFlagInteractor.getcountryFlag(stringURL: flagUrl) { (flagImage) in
-            // Resize Image or do other operatoins on Image
-            onImageFetched(flagImage);
-            
-        }
-    }
+   
     
 }

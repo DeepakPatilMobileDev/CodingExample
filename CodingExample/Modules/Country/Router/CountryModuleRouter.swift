@@ -8,9 +8,9 @@
 
 import Foundation
 class  CountryModuleRouter: BaseRouter {
-    func lauchFlagImageController(presenter:CountryListPresenter,countryData:CountryEntity){
+    func lauchFlagImageController(countryData:CountryEntity){
        
-        let flagVC:FlagViewController = FlagViewController.init(presenter: presenter, countryData: countryData)
+        let flagVC:FlagViewController = FlagViewController.init(countryData: countryData)
         self.pushViewController(viewController: flagVC as BaseViewController, animnated: false)
         // Do any more initializations, action you wanted to do wiht VC if needed
         

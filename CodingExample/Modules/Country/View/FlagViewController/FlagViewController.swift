@@ -13,11 +13,10 @@ import UIKit
 class FlagViewController: BaseViewController {
     
     @IBOutlet weak var flagImageView: UIImageView!
-    var countryPresenter:CountryListPresenter
+    var flagPresenter:FlagViewPresenter = FlagViewPresenter()
     var countryData:CountryEntity
     
-    init(presenter:CountryListPresenter ,countryData:CountryEntity) {
-        self.countryPresenter = presenter
+    init(countryData:CountryEntity) {
         self.countryData = countryData
         super.init(nibName: String(describing: FlagViewController.self), bundle: nil)
     }
@@ -29,7 +28,7 @@ class FlagViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        countryPresenter.fetchImageOfCountry(flagUrl: self.countryData.getFlagURL()) { (flagIamge) in
+        flagPresenter.fetchImageOfCountry(flagUrl: self.countryData.getFlagURL()) { (flagIamge) in
             self.flagImageView.image = flagIamge
         }
         // Do any additional setup after loading the view.
